@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery Handson</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="screen" onclick="toggleMenu()"></div>
+    <header>
+        <div class="head contanier flex row space-between align-center">
+            <div class="logo">
+                Blogin<span>.</span>
+            </div>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="main-nav flex row list-clean">
+                <li class="flex flex-center active"><a href="#">Journal</a></li>
+                <li class="flex flex-center "><a href="#">About</a></li>
+                <li class="flex flex-center "><a href="#">Work</a></li>
+                <li class="flex flex-center "><a href="#" onclick="onToggleModal()">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-container flex column contanier">
+        <section class="card flex row">
+            <img src="img/Layer 2.psb.png" alt="" />
+            <div class="flex column space-between">
+                <h2>Lorem ipsum dolor eaque is amet ad is harumm</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, unde beatae.
+                    Eveniet itaque ullam, ut maxime beatae.
+                    loas loren asnra dolor aqfj beataet
+                </p>
+                <p>
+                    quisquam porroassumenda repellendus nihil a incidunt aliquam, nobis
+                    tenetur!
+                </p>
+                <button class="btn-catalog">Countinue reading</button>
+            </div>
+        </section>
+        
+        <section class="card flex row">
+            <img src="img/Layer 3.psb.png" alt="" />
+            <div class="flex column space-between">
+                <h2>Lorem ipsum dolor eaque is amet ad harumm</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni
+                    ullam hic velit ut, ex eligendi, quae totam vero harum.hasdn rao dloero
+                    uanf. msadk llo anrq enee.
+                </p>
+                <p>
+                    quibusdamsuscipit reprehenderit doloribus exercitationem fugit soluta
+                    voluptate. Edarlodor ....
+                </p>
+                <button class="btn-catalog">Countinue reading </button>
+            </div>
+        </section>
+        <section class="card flex row">
+            <img src="img/Layer 4.psb.png" alt="" />
+            <div class="flex column space-between">
+                <h2>Lorem ipsum dolor eaque is amet ad harumm</h2>
+                <p> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commo doconsequat,sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptatllum dolore eu
+                    fugiat nulla pariatur...
+                </p>
+                <button class="btn-catalog">Countinue reading</button>
+            </div>
+        </section>
+        <section>
+            <div class="flex row space-between align-center btns-nav-page contanier">
+                <div class="prev btn-pager">
+                    <i class="fas fa-long-arrow-alt-left"></i>&nbsp; Previous
+                </div>
+                <div class="next btn-pager">
+                    Next &nbsp;<i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex column align-center contanier">
+            <div class="logo">
+                Blogin<span>.</span>
+            </div>
+            © 2014 Blogin.com - All Rights Reserved - Find more free
+            Templates at Pixelhint.com
+            <div class="flex row flex-center icon">
+                <i class="fab fa-facebook-square fa-3x media-icon"></i>
+                <i class="fab fa-twitter-square fa-3x media-icon"></i>
+                <i class="fab fa-behance-square fa-3x media-icon"></i>
+                <i class="fab fa-whatsapp-square fa-3x media-icon"></i>
+            </div>
+        </div>
+    </footer>
+    <div class="screen-modal flex row">
+        <div class="modal flex column space-evenly align-center">
+            <h2>Join Us to get Access To the latest stories!</h2>
+            <input type="email" placeholder="example@mail.something">
+            <div class="modal-btns flex row space-evenly">
+                <button class="modal-submit" onclick="onToggleModal()">Submit</button>
+                <button class="modal-cancel" onclick="onToggleModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
